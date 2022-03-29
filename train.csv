@@ -1,0 +1,11 @@
+id,area,bedrooms,bathrooms,lotSize,builtYear,actualValue
+1,Abbotsford,5,4,8712,1973,1349000
+2,Burnaby,10,8,6098,2012,2498000
+3,Vancouver,4,5,3484,1995,1999888
+4,Richmond,4,3,3920,1994,1498000
+5,Vancouver,7,4,3920,1969,1990000
+6,Richmond,5,6,8712,2003,1518000
+7,Abbotsford,5,3,6534,1979,1280000
+8,Surrey,4,4,6969,1988,1399999
+9,Surrey,3,2,3920,1977,1450000
+10,Burnaby,5,3,3920,2016,2290000
