@@ -13,9 +13,9 @@ try:
 except:
     print("train.csv load failed")
 
-test = pdTest.head(10).filter(items=['abb','bby','van','rmd','bedrooms', 'bathrooms', 'lotSize', 'builtYear', 'actualValue'])
+test = pdTest.head(10).filter(items=['abb','bby','van','sur','rmd','bedrooms', 'bathrooms', 'lotSize', 'builtYear', 'actualValue'])
 #testAreas = pdTest.head(10).filter(items='area').values
-train = pdTrain.head(30).filter(items=['abb','bby','van','rmd','bedrooms', 'bathrooms', 'lotSize', 'builtYear', 'actualValue'])
+train = pdTrain.head(30).filter(items=['abb','bby','van','sur','rmd','bedrooms', 'bathrooms', 'lotSize', 'builtYear', 'actualValue'])
 #trainAreas = pdTrain.filter('area').values
 
 print(train)
