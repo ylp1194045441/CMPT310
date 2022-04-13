@@ -13,10 +13,12 @@ try:
 except:
     print("train.csv load failed")
 
-test = pdTest.head(10).filter(items=['bedrooms', 'bathrooms', 'lotSize', 'builtYear', 'actualValue'])
-testAreas = pdTest.head(10).filter(items='area').values
-train = pdTrain.head(10).filter(items=['bedrooms', 'bathrooms', 'lotSize', 'builtYear', 'actualValue'])
-trainAreas = pdTrain.filter('area').values
+test = pdTest.head(10).filter(items=['abb','bby','van','rmd','bedrooms', 'bathrooms', 'lotSize', 'builtYear', 'actualValue'])
+#testAreas = pdTest.head(10).filter(items='area').values
+train = pdTrain.head(30).filter(items=['abb','bby','van','rmd','bedrooms', 'bathrooms', 'lotSize', 'builtYear', 'actualValue'])
+#trainAreas = pdTrain.filter('area').values
+
+print(train)
 
 print("csv read success")
 
@@ -43,7 +45,7 @@ from sklearn.ensemble import RandomForestRegressor
 regressor = RandomForestRegressor(n_estimators=300, random_state=0)
 regressor.fit(X_train, y_train)
 
-print(regressor.score(X_train, y_train))
+print("The score is: "+ str(regressor.score(X_train, y_train)))
 
 y_pred = regressor.predict(X_test)
 # Plot y_test vs y_pred
